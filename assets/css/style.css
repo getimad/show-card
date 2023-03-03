@@ -1,0 +1,83 @@
+@import url(fonts.css);
+@import url(colors.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to top left, var(--main-dark-color), var(--main-light-color));
+  font-family: "Roboto Regular";
+}
+
+main {
+  height: 100vh;
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#show-card-btn {
+  padding: 15px 25px;
+  background-color: var(--main-light-color);
+  border: 2px solid var(--main-dark-color);
+  font-family: "Roboto Bold";
+  font-weight: 700;
+  color: var(--main-dark-color);
+  transition-property: color, background-color;
+  transition-duration: 0.5s;
+}
+
+#show-card-btn:hover {
+  background-color: var(--main-dark-color);
+  color: var(--main-light-color);
+  transition-property: color, background-color;
+  transition-duration: 0.3s;
+}
+
+
+/* Window */
+
+.hidden {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 60vw;
+  height: 60vh;
+  min-width: 600px;
+  min-height: 300px;
+  background-color: var(--main-light-color);
+}
+
+.head-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+  background-color: var(--main-dark-color);
+  color: var(--main-light-color);
+}
+
+.title {
+  font-family: "Roboto Bold";
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#close-card-btn {
+  padding: 7px 15px;
+  background-color: #3a3a3a;
+  border-radius: 5px;
+  color: var(--main-light-color);
+  cursor: pointer;
+}
+
+.body-card {
+  padding: 20px;
+  line-height: 1.8rem;
+}
